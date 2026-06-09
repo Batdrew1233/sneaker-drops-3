@@ -1,6 +1,9 @@
 package com.plurasight.sneakerdrops.models;
 
-import jakarta.persistence.*;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 
 
 @Entity
@@ -14,8 +17,7 @@ public class Brand {
     public Brand() {
     }
 
-    public Brand(Long id, String name) {
-        this.id = id;
+    public Brand(String name) {
         this.name = name;
     }
 

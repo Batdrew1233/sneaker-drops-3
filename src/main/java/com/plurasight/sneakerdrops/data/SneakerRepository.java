@@ -1,4 +1,7 @@
 package com.plurasight.sneakerdrops.data;
 
-public class SneakerRepository {
+import com.plurasight.sneakerdrops.models.Sneaker;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface SneakerRepository extends JpaRepository<Sneaker, Long> {
 }

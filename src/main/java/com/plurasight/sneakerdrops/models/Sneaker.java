@@ -1,6 +1,9 @@
 package com.plurasight.sneakerdrops.models;
 
-import jakarta.persistence.*;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 
 @Entity
 public class Sneaker {
@@ -14,8 +17,7 @@ public class Sneaker {
     public Sneaker() {
     }
 
-    public Sneaker(Long id, String model, double price, int releaseYear) {
-        this.id = id;
+    public Sneaker(String model, double price, int releaseYear) {
         this.model = model;
         this.price = price;
         this.releaseYear = releaseYear;
